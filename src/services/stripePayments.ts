@@ -1,6 +1,6 @@
 import { Platform, Alert, Linking } from 'react-native';
 
-const BACKEND_URL = 'https://cupidcore-api.up.railway.app'; // Replace with your deployed backend URL
+const BACKEND_URL = 'https://cupidcore-api.up.railway.app';
 
 let initPaymentSheet: (params: any) => Promise<{ error?: any }> = async () => ({ error: undefined });
 let presentPaymentSheet: (options?: any) => Promise<{ error?: any }> = async () => ({ error: undefined });
