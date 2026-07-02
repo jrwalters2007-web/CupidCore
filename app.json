@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "CupidCore",
+    "slug": "jeff",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jrw2007s.cupidcore"
+    },
+    "android": {
+      "package": "com.jrw2007s.cupidcore",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.jrw2007s.cupidcore",
+          "enableGooglePay": true
+        }
+      ]
+    ],
+    "extra": {
+      "firebaseApiKey": "YOUR_FIREBASE_API_KEY",
+      "firebaseAuthDomain": "YOUR_FIREBASE_AUTH_DOMAIN",
+      "firebaseProjectId": "YOUR_FIREBASE_PROJECT_ID",
+      "firebaseStorageBucket": "YOUR_FIREBASE_STORAGE_BUCKET",
+      "firebaseMessagingSenderId": "YOUR_FIREBASE_MESSAGING_SENDER_ID",
+      "firebaseAppId": "YOUR_FIREBASE_APP_ID",
+      "stripePublishableKey": "pk_test_51T1tQq2VcQisA5Kr5AeJv2oE5IziAR86ZWbLeyRsms8lPmJrQFmABNDSrpdNxsYxduMKRONvPPQSTSPlJS67aGzC001PC6e7km",
+      "eas": {
+        "projectId": "ff37a0b8-7575-41c4-a5e1-3d377fee2723"
+      }
+    },
+    "owner": "jrw2007s-team"
+  }
+}
