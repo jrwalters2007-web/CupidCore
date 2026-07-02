@@ -1,6 +1,6 @@
 import { Alert, Linking } from 'react-native';
 
-const BACKEND_URL = 'http://localhost:4242';
+const BACKEND_URL = 'https://cupidcore-api.up.railway.app'; // Replace with your deployed backend URL
 
 export async function fetchPaymentSheetParams(amountInCents: number, currency = 'usd') {
   const response = await fetch(`${BACKEND_URL}/create-payment-intent`, {
